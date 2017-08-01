@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'game' %}
+
+{% block title 'win.title'|trans %}
+
+{% block subtitle 'win.subtitle'|trans %}
+
+{% block body %}
+    <p>
+        You Won!!!
+    </p>
+    <br class="clearfix" />
+
+    <p class="attempts">
+        <a href="{{ path('app_game_play') }}">
+            {{- 'play.start_new_game'|trans -}}
+        </a>
+    </p>
+
+    <br class="clearfix" />
+{% endblock %}
+

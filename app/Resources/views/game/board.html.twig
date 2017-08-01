@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'game' %}
+
+{% block title 'play.title'|trans %}
+
+{% block subtitle 'play.subtitle'|trans %}
+
+{% block body %}
+
+    <ul class="bee_games">
+        {% for bee in game.getBees() %}
+            <li class="bee guessed">
+                {{- bee -}}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <br class="clearfix" />
+
+    <h2>{{ 'play.hit_a_bee'|trans }}</h2>
+    <h3>Bees Count: {{- game.getBeesCount() -}}</h3>
+
+    <ul>
+        <li>
+            <a href="{{ path('app_game_hit_a_bee') }}" class="btn btn-default">{{ 'play.hit_button'|trans }}</a>
+        </li>
+        <li>
+            <a href="{{ path('app_game_reset') }}">
+                    {{- 'play.reset_game'|trans -}}
+            </a>
+        </li>
+    </ul>
+{% endblock %}

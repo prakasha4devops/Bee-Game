@@ -1,0 +1,8 @@
+homepage:
+    path: /game
+    defaults: { _controller: 'AppBundle:game:play', menu: game }
+    methods: GET
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

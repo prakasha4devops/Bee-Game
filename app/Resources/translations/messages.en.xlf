@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="a41ce6490272595520c7a2640528cc08" resname="sidebar.last_games">
+        <source>sidebar.last_games</source>
+        <target>Last Games</target>
+        <note from="hugo">
+          djewofh;wfn;wnf
+        </note>
+        <note from="thomas">
+          djewofh;wfn;wnf
+        </note>
+      </trans-unit>
+      <trans-unit id="de8416862d565b02c389848f54767a64" resname="menu.game">
+        <source>menu.game</source>
+        <target>Game</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
